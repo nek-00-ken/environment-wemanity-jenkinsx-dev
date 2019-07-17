@@ -1,0 +1,21 @@
+apiVersion: jenkins.io/v1
+kind: Environment
+metadata:
+  creationTimestamp: null
+  name: staging
+spec:
+  kind: Permanent
+  label: Staging
+  namespace: jx-staging
+  order: 100
+  previewGitInfo:
+    user: {}
+  promotionStrategy: Auto
+  source:
+    ref: master
+    url: https://github.com/nek-00-ken/environment-wemanity-jenkinsx-staging.git
+  teamSettings:
+    defaultScheduler:
+      kind: ""
+      name: ""
+status: {}

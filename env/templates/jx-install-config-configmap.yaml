@@ -1,0 +1,35 @@
+apiVersion: v1
+data:
+  ca.crt: |
+    -----BEGIN CERTIFICATE-----
+    MIIDDDCCAfSgAwIBAgIRAM19HY6O3Pvh+jmnX9rBqj0wDQYJKoZIhvcNAQELBQAw
+    LzEtMCsGA1UEAxMkOGFjNzJmMzctMzk0Ny00NmRiLTg0MTYtYmU0ZmJhZTZiYTBj
+    MB4XDTE5MDcxNzIxMDEyNVoXDTI0MDcxNTIyMDEyNVowLzEtMCsGA1UEAxMkOGFj
+    NzJmMzctMzk0Ny00NmRiLTg0MTYtYmU0ZmJhZTZiYTBjMIIBIjANBgkqhkiG9w0B
+    AQEFAAOCAQ8AMIIBCgKCAQEAnwDKNoUGSG6uEqNQaLlmHSB3Vp/PIuItzrSaKbJC
+    ixcreoNxT6lB5G7Yp/j/Fg5qEgWKhotFXBfnfhoFfpkrkkZt0QIxqhhm0JiwAfHq
+    owV+3w8Aopvvd7QceAZYY1AQZgFcYvhtQGAs3TMf745w9tu9KVIcF1/NSlH9lDWl
+    RL4wfPTgHp5pnTRMqvltdAFASKchEj+IOabs7qpcJGVDF+Wi7KqFIbK6lHNxvUH5
+    Jj11ZiqdecPG9NbTVbvs4v7ObZT1E34kvcSxdgEhV9fBGxErldLdLLK19PqCdnBv
+    4swFJSFKTZhbn9mpfwfqRxYZZmNSoLAzwrkdsFadzo1TEQIDAQABoyMwITAOBgNV
+    HQ8BAf8EBAMCAgQwDwYDVR0TAQH/BAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAQEA
+    OK2Ke+K5IlS1FB55QFX3VdFIYiupu4i5/3+3wDYbc26ZR6MkSMG7NdGBd7hIZ0tV
+    q+3Cdz/M/PKky2oXwW1bI5otK8PpvxmA1Ax4zMAWwIH3b8hkH09e/j+EtXMMKLrJ
+    JNlVgUeQxUXtP5i9HDV5Hw5Z00zInQ6cKft75hDwcJyUbkAV/w9Jm/THqQMEy7OI
+    iGP+Usc/M8KQLq6JbgEpjS84UXU7Gn9XZ5lr9fpXZSvrg89FluaYw1d689hB5kDl
+    OG0UuGBD/VOutat+cVXH6HS+CWxMNJflfS0oAponUeiBH9TWqzTuPz4w8D8TlDAU
+    80KIZJX++DEZuBHm/xAyqg==
+    -----END CERTIFICATE-----
+  clusterName: wemanity-jenkinsx
+  jx-install-version: 2.0.474
+  kubeProvider: gke
+  projectID: project-21587
+  region: ""
+  secretsLocation: vault
+  server: https://34.76.240.46
+  systemVaultName: jx-vault-wemanity-jenk
+  zone: europe-west1-b
+kind: ConfigMap
+metadata:
+  creationTimestamp: null
+  name: jx-install-config

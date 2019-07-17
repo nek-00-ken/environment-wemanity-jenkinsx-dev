@@ -1,0 +1,53 @@
+apiVersion: jenkins.io/v1
+kind: Environment
+metadata:
+  creationTimestamp: null
+  labels:
+    env: dev
+    team: jx
+  name: dev
+spec:
+  kind: Development
+  label: Development
+  namespace: jx
+  previewGitInfo:
+    user: {}
+  promotionStrategy: Never
+  source:
+    ref: master
+    url: https://github.com/nek-00-ken/environment-wemanity-jenkinsx-dev.git
+  teamSettings:
+    appsRepository: https://storage.googleapis.com/chartmuseum.jenkins-x.io
+    buildPackName: kubernetes-workloads
+    buildPackRef: master
+    buildPackUrl: https://github.com/jenkins-x-buildpacks/jenkins-x-kubernetes.git
+    defaultScheduler:
+      kind: ""
+      name: ""
+    dockerRegistryOrg: project-21587
+    envOrganisation: nek-00-ken
+    gitServer: https://github.com
+    helmTemplate: true
+    importMode: YAML
+    kubeProvider: gke
+    pipelineUsername: nek-00-ken
+    promotionEngine: Prow
+    prowConfig: Legacy
+    prowEngine: Tekton
+    quickstartLocations:
+    - excludes:
+      - WIP-*
+      gitKind: github
+      gitUrl: https://github.com
+      includes:
+      - '*'
+      owner: jenkins-x-quickstarts
+    storageLocations:
+    - bucketUrl: gs://wemanity-jenkinsx-lts-ef765aea-1fe8-430a-ab40-8c30eeb0b35b
+      classifier: default
+    - bucketUrl: gs://wemanity-jenkinsx-lts-ef765aea-1fe8-430a-ab40-8c30eeb0b35b
+      classifier: logs
+    useGitOps: true
+    versionStreamUrl: https://github.com/jenkins-x/jenkins-x-versions.git
+  webHookEngine: Prow
+status: {}
